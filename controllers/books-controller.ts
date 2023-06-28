@@ -4,7 +4,7 @@ import { Books } from "../protocols";
 import httpStatus from "http-status";
 
 export function createBook(req: Request, res: Response){
-    const books = req.body as Books //validar com joi
+    const books = req.body as Books
     booksService.createBookService(books)
     res.sendStatus(httpStatus.CREATED)
 }
