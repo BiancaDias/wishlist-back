@@ -13,7 +13,7 @@ export function getTotalBooksForPublisherService(publisher:string){
     return booksRepository.getTotalBooksForPublisherDB(publisher)
 }
 
-export function putBookService(abstract: string,status: boolean, note: string, id: number){
+export function putBookService(abstract: string, status: boolean, note: string, id: number){
     return booksRepository.putBookDB(abstract, status, note, id)
 }
 

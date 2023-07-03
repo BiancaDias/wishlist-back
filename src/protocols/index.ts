@@ -10,3 +10,9 @@ export type UpdateBooks = {
     note?: string,
     abstract?: string
 }
+
+export type BooksBD = Books & UpdateBooks; //retorno do banco de dados
+
+export type TotalPublisher = {
+    count: number
+}
